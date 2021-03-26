@@ -23,7 +23,10 @@ Install the dependencies and devDependencies and start the server.
 ```sh
 cd chatbot
 composer install
+copy .env.example to .env (cp .env.example .env)
+update DB name, user and password in .env
 php artisan migrate:fresh
+php artisan serve
 ```
 
 
